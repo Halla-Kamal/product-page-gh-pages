@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "cairoFont";
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body {
+  font-family: "cairoFont", Arial, sans-serif;
+  direction: rtl;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+}
+
+.fullscreen-video-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-top video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+*:focus {
+  box-shadow: none !important;
+}
+
+header .overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header.header .overlay .navbar .navbar-brand {
+  padding: 10px auto;
+  text-decoration: none !important;
+}
+
+.logo-name {
+  color: #7da008;
+  font-weight: bold;
+}
+
+header.header .overlay .header-text h3 {
+  color: #f6f6f6;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+
+header.header .overlay .header-text h2 {
+  color: #f6f6f6;
+  font-size: 30px;
+  line-height: 46px;
+  margin-bottom: 35px;
+}
+
+header.header .overlay .header-text p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #f4f9f9;
+  margin-bottom: 30px;
+}
+
+header.header .overlay .header-text {
+  margin-top: 4rem;
+  margin-right: 50px;
+}
+
+header.header .overlay .header-text .buttons button {
+  border-radius: 7px;
+  font-family: 'cairoFont';
+  font-size: 18px;
+  line-height: 32px;
+  padding: 8px 25px;
+  border: 1px solid #d5662a;
+  margin-bottom: 60px;
+}
+
+header.header .overlay .header-text .buttons button:first-of-type {
+  background-color: #dd8455;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+header.header .overlay .header-text .buttons button:first-of-type:hover {
+  background: #d5662a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+header.header .overlay .header-text .buttons button:last-of-type {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+header.header .overlay .header-text .buttons button:last-of-type:hover {
+  background: #d5662a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+header.header .overlay .header-text .buttons button {
+  transition: all 0.4s ease;
+}
+
+/* new product start
+ 
+header.header .overlay .product-img {
+  position: relative;
+}
+header.header .overlay .product-img .img {
+  border: 2px solid #d1e0e0;
+}
+header.header .overlay .product-img img.label {
+  position: absolute;
+  top: -20px;
+  right: -20px; 
+}
+  header.header .overlay .product-img p {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: -30px;
+  right: 0px; 
+} 
+header.header .overlay .product-img {
+  margin-bottom: 30px;
+}
+*/
+section .features .title h3 {
+  font-size: 25px;
+  color: #184d47;
+}
+
+/*flex يجب علينا وضع هذه الخاصية للابن "جسم البطاقة" لأن البطاقة لديها قيمة عرض*/
+.card-body {
+  min-width: 0;
+}
+
+.card:hover {
+  transform: translateY(-.9%);
+}
+
+.card {
+  transition: transform .5s;
+}
+
+/* لحل مشكلة أحجام البطاقات الغير متساوية */
+.card .card-title {
+  height: 30px;
+  /* إخفاء الكلمات التي تتخطى الإرتفاع */
+  overflow: hidden;
+}
+
+.prices {
+  background-color: rgba(190, 229, 211, 0.2);
+}
+
+.btn:hover,
+.btn:focus {
+  text-decoration: none !important;
+}
+
+.prices .btn {
+  background-color: transparent !important;
+  color: #00917c !important;
+  border-color: #00917c !important;
+}
+
+.prices .btn:hover {
+  color: #fff !important;
+  background-color: #00917c !important;
+}
+
+.fqa {
+  margin: 60px;
+  cursor: pointer;
+}
+
+.accordion .fa {
+  margin-right: 0.5rem;
+}
+
+.fqa .card .card-header {
+  background-color: rgba(190, 229, 211, 0.2);
+}
+
+section.video {
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+section.video .overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+section.video button {
+  outline: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  font-size: 20px;
+  font-family: "cairoFont";
+  color: #ffffff;
+  background-color: transparent;
+  border: 0px;
+  transform: translate(50%, -50%);
+}
+
+section.video button i {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  line-height: 70px;
+}
+
+.footer {
+  background-color: rgba(134, 171, 161, 0.3);
+  padding: 50px 0 40px;
+}
+
+footer .social ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer .social ul li {
+  margin-left: 10px;
+  margin-right: 0 !important;
+}
+
+footer .social i {
+  color: #00917c;
+  margin: 8px;
+}
+
+footer .social ul li a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.14);
+  border-radius: 15%;
+}
+
+footer .social li a:hover {
+  background-color: rgba(0, 145, 124, 0.1);
+}
+
+footer .social ul li a {
+  -webkit-transition: all 0.2s ease;
+  Transition: all 0.2s ease;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  border-radius: 4px;
+  border: none;
+  line-height: 35px;
+}
+
+footer form button {
+  font-size: 15px;
+  border: 0px;
+  border-radius: 5px;
+  padding: 7px 20px;
+  background-color: #00917c !important;
+  color: rgb(243, 243, 243) !important;
+}
+
+footer form .form-group .error {
+  color: #184d47;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+@media(max-width:960px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
